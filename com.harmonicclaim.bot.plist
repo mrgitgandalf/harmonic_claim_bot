@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.harmonicclaim.bot</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/Library/Frameworks/Python.framework/Versions/3.14/bin/python3</string>
+        <string>/Users/cto/Prosjekter/harmonic_claim_bot/claim_bot.py</string>
+        <string>0x819fc86a60a820b7c9ed468cd94cdc719970c0f5</string>
+        <string>--once</string>
+        <string>--log-file</string>
+        <string>/Users/cto/Prosjekter/harmonic_claim_bot/claim.log</string>
+    </array>
+
+    <key>StartInterval</key>
+    <integer>600</integer>
+
+    <key>RunAtLoad</key>
+    <true/>
+
+    <key>StandardOutPath</key>
+    <string>/Users/cto/Prosjekter/harmonic_claim_bot/launchd.out.log</string>
+
+    <key>StandardErrorPath</key>
+    <string>/Users/cto/Prosjekter/harmonic_claim_bot/launchd.err.log</string>
+</dict>
+</plist>
