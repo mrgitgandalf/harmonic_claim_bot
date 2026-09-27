@@ -16,8 +16,8 @@ as much as a tighter interval — there's no benefit to polling more often.
 ## Run on a schedule via Vercel Cron (recommended, live)
 
 `api/claim-run.js` is a small serverless function with the same logic as
-`claim_bot.py`; `vercel.json` schedules it hourly at `:17`
-(`cron: "17 * * * *"`, offset off the top of the hour). Deployed at
+`claim_bot.py`; `vercel.json` schedules it hourly on the hour
+(`cron: "0 * * * *"`). Deployed at
 https://harmonicclaimbot.vercel.app — pushing to `main` redeploys
 automatically (the Vercel project is linked to this GitHub repo).
 
