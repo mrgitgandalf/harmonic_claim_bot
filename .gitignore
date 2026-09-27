@@ -4,3 +4,4 @@ __pycache__/
 claim.log
 launchd.out.log
 launchd.err.log
+.vercel
